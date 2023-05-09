@@ -1,0 +1,146 @@
+@font-face {
+    font-family: Rubik;
+    src: url(./fonts/Rubik-VariableFont_wght.ttf);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    background-color: hsl(226, 43%, 10%);
+    height: 100vh;
+    font-family: Rubik, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    gap: 40px;
+    padding: 10px;
+    grid-template-columns: auto auto auto auto;
+    border: 1px solid black;
+
+}
+
+.report-container {
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    color: antiquewhite;
+    background-color: hsl(235, 46%, 20%);
+    grid-row: 1/span 2;
+    border-radius: 1rem;
+
+}
+
+#report-header {
+background-color: hsl(246, 80%, 60%);
+border-radius: 1rem;
+}
+
+#profile-image {
+    border: 5px solid aliceblue;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+
+}
+
+#profile-image img {
+    width: 100%;
+}
+
+.report-details-container {
+    color: antiquewhite;
+    column-gap: 2rem;
+    border: 1px solid black;
+    background-color: hsl(235, 46%, 20%);
+    padding: 10px;
+}
+
+.card {
+    color: antiquewhite;
+    display: grid;
+    grid-template-rows: 22% 78%;
+    border-radius: 0.5rem;
+    background-repeat: no-repeat;
+    background-position: top right;
+
+}
+
+#work-card {
+
+    background-color: hsl(15, 100%, 70%);
+    background-image: url(./images/icon-work.svg);
+}
+
+#play-card {
+
+    background-color: hsl(195, 74%, 62%);
+    background-image: url(./images/icon-play.svg);
+}
+
+#study-card {
+
+    background-color: hsl(348, 100%, 68%);
+    background-image: url(./images/icon-study.svg);
+
+}
+
+#exercise-card {
+
+    background-color: hsl(145, 58%, 55%);
+    background-image: url(./images/icon-exercise.svg);
+}
+
+#social-card {
+
+    background-color: hsl(264, 64%, 52%);
+    background-image: url(./images/icon-social.svg);
+}
+
+#self-care-card {
+
+    background-color: hsl(43, 84%, 65%);
+    background-image: url(./images/icon-self-care.svg);
+}
+
+.card-details {
+    padding: 1.5rem;
+
+    background-color: hsl(235, 46%, 20%);
+    display: grid;
+    row-gap: 1rem;
+    grid-row: 2;
+    border-radius: 0.5rem;
+
+}
+
+.card-details-header {
+    display: grid;
+    grid-template-columns: 1fr 0.2fr;
+}
+
+.card-title {
+    font-size: 18px;
+
+
+}
+
+.card-hours {
+    padding-bottom: 2rem;
+}
+
+.card-current-hours {
+
+    font-size: xxx-large;
+    font-weight: 300;
+}
+
+.card-previous-hours {
+    color: hsl(235, 45%, 61%);
+}
