@@ -16,6 +16,10 @@ body {
     background-color: hsl(226, 43%, 10%);
     height: 100vh;
     font-family: Rubik, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
 
 .grid-container {
@@ -24,22 +28,57 @@ body {
     padding: 10px;
     grid-template-columns: auto auto auto auto;
     border: 1px solid black;
-
+   
 }
 
-.report-container {
-    display: grid;
-    grid-template-rows: 3fr 1fr;
-    color: antiquewhite;
-    background-color: hsl(235, 46%, 20%);
-    grid-row: 1/span 2;
-    border-radius: 1rem;
 
-}
 
 #report-header {
+   grid-row: 1/ span 2 ;
 background-color: hsl(246, 80%, 60%);
-border-radius: 1rem;
+border-radius: 1rem 1rem 4rem 4rem;
+/* border-bottom-left-radius: 1rem ; */
+
+color: aliceblue;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+}
+.profile-name-container {
+    height: 70%;
+    font-family: Rubik;
+}
+.my-div{
+    padding: 1rem;
+    
+}
+p {
+    font-weight: lighter;
+    font-size: x-small;
+}
+.name {
+font-size: xx-large;
+font-weight: lighter;
+}
+
+#report-nav {
+    /* display: grid; */
+    /* grid-template-rows: 3fr 1fr; */
+    color: antiquewhite;
+    background-color: hsl(235, 46%, 20%);
+    /* grid-row: 1/span 2; */
+    /* gap: 3rem; */
+    padding: 10px;
+    height: 30%;
+    
+}
+
+.daily {
+    color: hsl(235, 45%, 61%);;
+}
+.monthly {
+    color: hsl(235, 45%, 61%);;
 }
 
 #profile-image {
@@ -61,6 +100,10 @@ border-radius: 1rem;
     background-color: hsl(235, 46%, 20%);
     padding: 10px;
 }
+
+
+
+
 
 .card {
     color: antiquewhite;
@@ -111,7 +154,6 @@ border-radius: 1rem;
 
 .card-details {
     padding: 1.5rem;
-
     background-color: hsl(235, 46%, 20%);
     display: grid;
     row-gap: 1rem;
